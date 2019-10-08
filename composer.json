@@ -1,0 +1,40 @@
+{
+  "name": "gorapiotr/modules-vue-i18n-generator",
+  "description": "Vue i18n js file generator for NWiart package.",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Piotr Gora",
+      "email": "piotr.gora1994@gmail.com"
+    }
+  ],
+  "minimum-stability": "dev",
+  "require": {
+    "martinlindhe/laravel-vue-i18n-generator": "dev-master",
+    "beleneglorion/php-bugherd-api": "^1.0"
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "MartinLindhe\\VueInternationalizationGenerator\\GeneratorProvider"
+      ]
+    }
+  },
+  "autoload": {
+    "psr-4": {
+      "MartinLindhe\\VueInternationalizationGenerator\\": "/vendor/martinlindhe/laravel-vue-i18n-generator/src/"
+    },
+    "psr-0": {
+      "VueInternationalizationGenerator\\": "/vendor/martinlindhe/laravel-vue-i18n-generator/src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "MartinLindhe\\VueInternationalizationGenerator\\": "/vendor/martinlindhe/laravel-vue-i18n-generator/src/"
+    },
+    "psr-0": {
+      "VueInternationalizationGenerator\\": "/vendor/martinlindhe/laravel-vue-i18n-generator/src/"
+    }
+  }
+}
