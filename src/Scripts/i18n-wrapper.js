@@ -31,4 +31,4 @@ modules.forEach(function(module) {
 
 var json = JSON.stringify(translations, null, 4);
 
-fs.writeFile('myjsonfile.js', 'export default ' + json, 'utf8');
+fs.writeFile(process.argv[2], 'export default ' + json, 'utf8');
