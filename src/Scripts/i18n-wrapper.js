@@ -1,14 +1,9 @@
 'use strict';
 var fs = require('fs');
 
-for (let j = 0; j < process.argv.length; j++) {
-    console.log(j + ' -> ' + (process.argv[j]));
-}
-
 let i18n = fs.readFileSync( process.argv[2], 'utf-8');
 
 i18n = JSON.parse(i18n.toString().replace('export default ', ''));
-console.log(i18n);
 
 const keys = Object.keys(i18n);
 
@@ -31,4 +26,4 @@ modules.forEach(function(module) {
 
 var json = JSON.stringify(translations, null, 4);
 
-fs.writeFile(process.argv[2], 'export default ' + json, 'utf8');
+fs.writeFile(process.argv[2], 'export default ' + json, 'utf8', () => {});

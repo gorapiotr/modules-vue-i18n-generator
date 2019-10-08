@@ -10,10 +10,6 @@
     }
   ],
   "minimum-stability": "dev",
-  "require": {
-    "martinlindhe/laravel-vue-i18n-generator": "dev-master",
-    "beleneglorion/php-bugherd-api": "^1.0"
-  },
   "extra": {
     "laravel": {
       "providers": [

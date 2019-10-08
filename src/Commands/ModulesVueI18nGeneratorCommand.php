@@ -4,8 +4,6 @@
 namespace GoraPiotr\ModulesVueI18nGenerator\Commands;
 
 
-use MartinLindhe\VueInternationalizationGenerator\Commands\GenerateInclude;
-
 class ModulesVueI18nGeneratorCommand extends GenerateInclude
 {
     /**
@@ -40,6 +38,6 @@ class ModulesVueI18nGeneratorCommand extends GenerateInclude
     {
         $filePath = base_path() . config('vue-i18n-generator.jsFile');
 
-        exec("cd ". __DIR__ . "/../Scripts && node i18n-wrapper.js " . $filePath);
+        exec("cd " . __DIR__ . "/../Scripts && node i18n-wrapper.js " . $filePath);
     }
 }

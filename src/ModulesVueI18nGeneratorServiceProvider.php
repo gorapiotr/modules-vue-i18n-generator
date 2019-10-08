@@ -31,11 +31,11 @@ class ModulesVueI18NGeneratorServiceProvider extends ServiceProvider
     {
 
         $this->publishes([
-            __DIR__ . '/../../../martinlindhe/laravel-vue-i18n-generator/src/config/vue-i18n-generator.php' => config_path('vue-i18n-generator.php'),
+            __DIR__ . '/config/vue-i18n-generator.php' => config_path('vue-i18n-generator.php'),
         ]);
 
         $this->mergeConfigFrom(
-            __DIR__ . '/../../../martinlindhe/laravel-vue-i18n-generator/src/config/vue-i18n-generator.php',
+            __DIR__ . '/config/vue-i18n-generator.php',
             'vue-i18n-generator'
         );
     }
