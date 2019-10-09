@@ -11,14 +11,14 @@ class ModulesVueI18nGeneratorCommand extends GenerateInclude
      *
      * @var string
      */
-    protected $signature = 'modules-vue-i18n:generate {--umd} {--multi} {--with-vendor} {--file-name=} {--lang-files=} {--format=es6} {--multi-locales}';
+    protected $signature = 'module-vue-i18n:generate {--umd} {--multi} {--with-vendor} {--file-name=} {--lang-files=} {--format=es6} {--multi-locales}';
 
     /**
      * The console command description.
      *
      * @var string
      */
-    protected $description = "Add description";
+    protected $description = "Create output translations i18n js file for vue.";
 
     /**
      * Execute the console command.

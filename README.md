@@ -3,7 +3,7 @@
 ## Install the package
 
 In your project:
-```composer gorapiotr/modules-vue-i18n-generator```
+```composer required gorapiotr/modules-vue-i18n-generator```
 
 In ```config/app.php``` providers:
 
