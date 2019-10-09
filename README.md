@@ -20,7 +20,7 @@ php artisan vendor:publish --provider="GoraPiotr\ModulesVueI18nGenerator\Modules
 Then generate the include file with
 ```
 
-php artisan modules-vue-i18n:generate
+php artisan module-vue-i18n:generate
 ```
 
 ## Module based on: 
